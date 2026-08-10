@@ -1,3 +1,5 @@
+import Script from "next/script";
+
 const CTA_HREF = "#book";
 
 function Check() {
@@ -362,11 +364,26 @@ export default function Home() {
               buyers. Walk away with a plan whether we work together or not.
             </p>
 
-            <div className="mt-10 flex flex-col items-center gap-4">
-              <CtaButton className="px-10 py-5 text-lg">Book My Free Strategy Call</CtaButton>
-              <p className="text-sm text-muted">
-                📍 Limited spots each month — we only take a handful of lots per market to keep leads exclusive.
-              </p>
+            <p className="mx-auto mt-6 max-w-md text-sm text-muted">
+              📍 Limited spots each month — we only take a handful of lots per market to keep leads exclusive.
+              Grab a time that works for you below.
+            </p>
+
+            {/* ============ BOOKING CALENDAR ============ */}
+            <div className="mx-auto mt-10 max-w-2xl overflow-hidden rounded-2xl border border-border bg-white p-2 shadow-2xl shadow-black/40 sm:p-3">
+              <iframe
+                src="https://link.mobilehomeguys.ai/widget/booking/S1JGD7tDR81CX4H5KAbI"
+                allow="payment"
+                scrolling="no"
+                id="S1JGD7tDR81CX4H5KAbI_1786372684260"
+                title="Book your free Trailer Dawgz strategy call"
+                style={{
+                  width: "100%",
+                  minHeight: "720px",
+                  border: "none",
+                  overflow: "hidden",
+                }}
+              />
             </div>
 
             <ul className="mx-auto mt-10 flex max-w-lg flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-muted">
@@ -382,6 +399,10 @@ export default function Home() {
               ))}
             </ul>
           </div>
+          <Script
+            src="https://link.mobilehomeguys.ai/js/form_embed.js"
+            strategy="afterInteractive"
+          />
         </section>
       </main>
 
