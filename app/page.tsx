@@ -386,7 +386,7 @@ export default function Home() {
         </section>
 
         {/* ================= GUARANTEE ================= */}
-        <section className="border-b border-border bg-surface/40">
+        <section className="bg-surface/40">
           <div className="mx-auto w-full max-w-4xl px-5 py-16 sm:py-20">
             <div className="rounded-2xl border border-accent/40 bg-surface p-8 sm:p-12">
               <p className="text-sm font-bold uppercase tracking-widest text-accent">
@@ -401,6 +401,9 @@ export default function Home() {
                 and show you the gaps you can drive a trailer straight through. If we can&apos;t show you a clear
                 path to more booked appointments, we&apos;ll tell you flat out. No fluff. No hard sell.
               </p>
+              <div className="mt-8">
+                <CtaButton>Book My Free Strategy Call</CtaButton>
+              </div>
             </div>
           </div>
         </section>
