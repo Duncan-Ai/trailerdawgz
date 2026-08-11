@@ -150,6 +150,66 @@ export default function Home() {
           </div>
         </section>
 
+        {/* ================= BOOK / STRATEGY CALL ================= */}
+        <section id="book" className="relative overflow-hidden scroll-mt-20 border-b border-border bg-surface/40">
+          <div className="hazard absolute inset-x-0 top-0 h-2 opacity-80" />
+          <div className="pointer-events-none absolute inset-0 bg-grid opacity-40" />
+          <div className="pointer-events-none absolute bottom-0 left-1/2 h-72 w-[42rem] -translate-x-1/2 rounded-full bg-accent/10 blur-[120px]" />
+          <div className="relative mx-auto w-full max-w-3xl px-5 py-16 text-center sm:py-20">
+            <p className="text-sm font-bold uppercase tracking-widest text-accent">
+              Free Strategy Call
+            </p>
+            <h2 className="mt-4 font-display text-4xl leading-[1] tracking-tight sm:text-6xl">
+              See Exactly What Your Competitors Are Spending —{" "}
+              <span className="text-gradient">Free.</span>
+            </h2>
+            <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-muted">
+              Book your free strategy call and we&apos;ll pull back the curtain on your local competition&apos;s ads,
+              show you where the opportunity is, and map out how we&apos;d fill your lot with exclusive, qualified
+              buyers. Walk away with a plan whether we work together or not.
+            </p>
+
+            <p className="mx-auto mt-6 max-w-md text-sm text-muted">
+              📍 Limited spots each month — we only take a handful of lots per market to keep leads exclusive.
+              Grab a time that works for you below.
+            </p>
+
+            {/* ============ BOOKING CALENDAR ============ */}
+            <div className="mx-auto mt-10 max-w-2xl overflow-hidden rounded-2xl border border-border bg-white p-2 shadow-xl shadow-black/10 sm:p-3">
+              <iframe
+                src="https://link.mobilehomeguys.ai/widget/booking/S1JGD7tDR81CX4H5KAbI"
+                allow="payment"
+                scrolling="no"
+                id="S1JGD7tDR81CX4H5KAbI_1786372684260"
+                title="Book your free Trailer Dawgz strategy call"
+                style={{
+                  width: "100%",
+                  minHeight: "720px",
+                  border: "none",
+                  overflow: "hidden",
+                }}
+              />
+            </div>
+
+            <ul className="mx-auto mt-10 flex max-w-lg flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-muted">
+              {[
+                "Free competitor ad report",
+                "No contracts",
+                "Trailer dealers only",
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-2">
+                  <Check />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <Script
+            src="https://link.mobilehomeguys.ai/js/form_embed.js"
+            strategy="afterInteractive"
+          />
+        </section>
+
         {/* ================= PAIN / AGITATION ================= */}
         <section className="border-b border-border bg-surface/40">
           <div className="mx-auto w-full max-w-5xl px-5 py-16 sm:py-20">
@@ -343,66 +403,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </section>
-
-        {/* ================= FINAL CTA ================= */}
-        <section id="book" className="relative overflow-hidden scroll-mt-20 bg-surface/40">
-          <div className="hazard absolute inset-x-0 top-0 h-2 opacity-80" />
-          <div className="pointer-events-none absolute inset-0 bg-grid opacity-40" />
-          <div className="pointer-events-none absolute bottom-0 left-1/2 h-72 w-[42rem] -translate-x-1/2 rounded-full bg-accent/10 blur-[120px]" />
-          <div className="relative mx-auto w-full max-w-3xl px-5 py-20 text-center sm:py-28">
-            <p className="text-sm font-bold uppercase tracking-widest text-accent">
-              Free Strategy Call
-            </p>
-            <h2 className="mt-4 font-display text-4xl leading-[1] tracking-tight sm:text-6xl">
-              See Exactly What Your Competitors Are Spending —{" "}
-              <span className="text-gradient">Free.</span>
-            </h2>
-            <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-muted">
-              Book your free strategy call and we&apos;ll pull back the curtain on your local competition&apos;s ads,
-              show you where the opportunity is, and map out how we&apos;d fill your lot with exclusive, qualified
-              buyers. Walk away with a plan whether we work together or not.
-            </p>
-
-            <p className="mx-auto mt-6 max-w-md text-sm text-muted">
-              📍 Limited spots each month — we only take a handful of lots per market to keep leads exclusive.
-              Grab a time that works for you below.
-            </p>
-
-            {/* ============ BOOKING CALENDAR ============ */}
-            <div className="mx-auto mt-10 max-w-2xl overflow-hidden rounded-2xl border border-border bg-white p-2 shadow-xl shadow-black/10 sm:p-3">
-              <iframe
-                src="https://link.mobilehomeguys.ai/widget/booking/S1JGD7tDR81CX4H5KAbI"
-                allow="payment"
-                scrolling="no"
-                id="S1JGD7tDR81CX4H5KAbI_1786372684260"
-                title="Book your free Trailer Dawgz strategy call"
-                style={{
-                  width: "100%",
-                  minHeight: "720px",
-                  border: "none",
-                  overflow: "hidden",
-                }}
-              />
-            </div>
-
-            <ul className="mx-auto mt-10 flex max-w-lg flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-muted">
-              {[
-                "Free competitor ad report",
-                "No contracts",
-                "Trailer dealers only",
-              ].map((item) => (
-                <li key={item} className="flex items-center gap-2">
-                  <Check />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <Script
-            src="https://link.mobilehomeguys.ai/js/form_embed.js"
-            strategy="afterInteractive"
-          />
         </section>
       </main>
 
