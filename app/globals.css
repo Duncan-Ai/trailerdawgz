@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0c0f;
-  --surface: #12161b;
-  --surface-2: #191f26;
-  --foreground: #f4f5f7;
-  --muted: #9aa4b1;
-  --border: #262d36;
-  --accent: #ff7a00;
-  --accent-2: #ffb200;
+  --background: #ffffff;
+  --surface: #f6f7f9;
+  --surface-2: #eef1f5;
+  --foreground: #10131a;
+  --muted: #55606f;
+  --border: #e3e7ec;
+  --accent: #ea580c;
+  --accent-2: #f59e0b;
 }
 
 @theme inline {
@@ -39,8 +39,8 @@ body {
 /* Subtle industrial grid + hazard-stripe helpers */
 .bg-grid {
   background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    linear-gradient(to right, rgba(16, 19, 26, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(16, 19, 26, 0.05) 1px, transparent 1px);
   background-size: 44px 44px;
 }
 
@@ -49,13 +49,13 @@ body {
     45deg,
     var(--accent) 0,
     var(--accent) 16px,
-    #0a0c0f 16px,
-    #0a0c0f 32px
+    #10131a 16px,
+    #10131a 32px
   );
 }
 
 .text-gradient {
-  background: linear-gradient(90deg, var(--accent-2), var(--accent));
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

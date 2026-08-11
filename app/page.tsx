@@ -5,7 +5,7 @@ const CTA_HREF = "#book";
 function Check() {
   return (
     <svg
-      className="mt-1 h-5 w-5 flex-none text-accent-2"
+      className="mt-1 h-5 w-5 flex-none text-accent"
       viewBox="0 0 20 20"
       fill="currentColor"
       aria-hidden="true"
@@ -62,7 +62,7 @@ export default function Home() {
           </a>
           <a
             href={CTA_HREF}
-            className="rounded-md border border-accent/40 px-4 py-2 text-sm font-bold uppercase tracking-wide text-accent-2 transition-colors hover:bg-accent/10"
+            className="rounded-md border border-accent/40 px-4 py-2 text-sm font-bold uppercase tracking-wide text-accent transition-colors hover:bg-accent/10"
           >
             Book My Strategy Call
           </a>
@@ -73,12 +73,12 @@ export default function Home() {
         {/* ================= HERO ================= */}
         <section className="relative overflow-hidden border-b border-border">
           <div className="bg-grid pointer-events-none absolute inset-0 opacity-60" />
-          <div className="pointer-events-none absolute -top-40 left-1/2 h-80 w-[42rem] -translate-x-1/2 rounded-full bg-accent/20 blur-[120px]" />
+          <div className="pointer-events-none absolute -top-40 left-1/2 h-80 w-[42rem] -translate-x-1/2 rounded-full bg-accent/10 blur-[120px]" />
           <div className="relative mx-auto grid w-full max-w-6xl gap-12 px-5 py-16 sm:py-24 lg:grid-cols-2 lg:items-center">
             {/* Left: copy */}
             <div>
               <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-muted">
-                <span className="h-2 w-2 rounded-full bg-accent-2" />
+                <span className="h-2 w-2 rounded-full bg-accent" />
                 For Trailer Lots Done Fighting Over The Same 6 Recycled Facebook Leads
               </p>
 
@@ -117,8 +117,8 @@ export default function Home() {
 
             {/* Right: VSL */}
             <div className="lg:pl-4">
-              <div className="rounded-2xl border border-border bg-surface p-3 shadow-2xl shadow-black/40">
-                <p className="px-2 pb-3 pt-1 text-center text-sm font-semibold uppercase tracking-wider text-accent-2">
+              <div className="rounded-2xl border border-border bg-surface p-3 shadow-xl shadow-black/10">
+                <p className="px-2 pb-3 pt-1 text-center text-sm font-semibold uppercase tracking-wider text-accent">
                   ▶ Watch This First — 4 Min
                 </p>
                 {/*
@@ -129,7 +129,7 @@ export default function Home() {
                   keep the aspect-video wrapper for a responsive 16:9 player.
                   ============================================================
                 */}
-                <div className="relative flex aspect-video w-full items-center justify-center overflow-hidden rounded-xl border border-border bg-black">
+                <div className="relative flex aspect-video w-full items-center justify-center overflow-hidden rounded-xl border border-border bg-surface-2">
                   <div className="bg-grid absolute inset-0 opacity-30" />
                   <div className="relative flex flex-col items-center gap-4 text-center">
                     <span className="flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-accent-2 to-accent text-black shadow-lg shadow-accent/40 transition-transform hover:scale-105">
@@ -174,7 +174,7 @@ export default function Home() {
                   key={i}
                   className="flex items-start gap-3 rounded-lg border border-border bg-surface p-5"
                 >
-                  <span className="mt-0.5 flex h-6 w-6 flex-none items-center justify-center rounded-full bg-accent/15 text-accent-2">
+                  <span className="mt-0.5 flex h-6 w-6 flex-none items-center justify-center rounded-full bg-accent/15 text-accent">
                     <svg viewBox="0 0 20 20" className="h-4 w-4" fill="currentColor" aria-hidden="true">
                       <path d="M10 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16Zm3.5 5.5-1-1L10 9 7.5 6.5l-1 1L9 10l-2.5 2.5 1 1L10 11l2.5 2.5 1-1L11 10l2.5-2.5Z" />
                     </svg>
@@ -187,7 +187,7 @@ export default function Home() {
               ))}
             </div>
             <p className="mt-10 text-lg font-semibold text-foreground">
-              Here&apos;s the truth: <span className="text-accent-2">whoever follows up fastest wins the sale.</span>{" "}
+              Here&apos;s the truth: <span className="text-accent">whoever follows up fastest wins the sale.</span>{" "}
               So we made sure that&apos;s always you.
             </p>
           </div>
@@ -197,7 +197,7 @@ export default function Home() {
         <section className="border-b border-border">
           <div className="mx-auto w-full max-w-6xl px-5 py-16 sm:py-24">
             <div className="mx-auto max-w-2xl text-center">
-              <p className="text-sm font-bold uppercase tracking-widest text-accent-2">
+              <p className="text-sm font-bold uppercase tracking-widest text-accent">
                 The Trailer Dawgz System
               </p>
               <h2 className="mt-3 font-display text-4xl tracking-tight sm:text-5xl">
@@ -238,7 +238,7 @@ export default function Home() {
                   className="group relative overflow-hidden rounded-2xl border border-border bg-surface p-8 transition-colors hover:border-accent/50"
                 >
                   <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-accent/10 blur-3xl transition-opacity group-hover:opacity-100" />
-                  <p className="inline-flex rounded-md bg-accent/15 px-3 py-1 text-xs font-bold uppercase tracking-wider text-accent-2">
+                  <p className="inline-flex rounded-md bg-accent/15 px-3 py-1 text-xs font-bold uppercase tracking-wider text-accent">
                     {f.tag}
                   </p>
                   <h3 className="mt-5 text-2xl font-bold text-foreground">{f.title}</h3>
@@ -253,7 +253,7 @@ export default function Home() {
         <section className="border-b border-border bg-surface/40">
           <div className="mx-auto w-full max-w-6xl px-5 py-16 sm:py-24">
             <div className="mx-auto max-w-2xl text-center">
-              <p className="text-sm font-bold uppercase tracking-widest text-accent-2">
+              <p className="text-sm font-bold uppercase tracking-widest text-accent">
                 Dead Simple
               </p>
               <h2 className="mt-3 font-display text-4xl tracking-tight sm:text-5xl">
@@ -329,7 +329,7 @@ export default function Home() {
         <section className="border-b border-border bg-surface/40">
           <div className="mx-auto w-full max-w-4xl px-5 py-16 sm:py-20">
             <div className="rounded-2xl border border-accent/40 bg-surface p-8 sm:p-12">
-              <p className="text-sm font-bold uppercase tracking-widest text-accent-2">
+              <p className="text-sm font-bold uppercase tracking-widest text-accent">
                 Our Promise To You
               </p>
               <h2 className="mt-3 font-display text-3xl tracking-tight sm:text-4xl">
@@ -346,12 +346,12 @@ export default function Home() {
         </section>
 
         {/* ================= FINAL CTA ================= */}
-        <section id="book" className="relative overflow-hidden scroll-mt-20">
+        <section id="book" className="relative overflow-hidden scroll-mt-20 bg-surface/40">
           <div className="hazard absolute inset-x-0 top-0 h-2 opacity-80" />
           <div className="pointer-events-none absolute inset-0 bg-grid opacity-40" />
-          <div className="pointer-events-none absolute bottom-0 left-1/2 h-72 w-[42rem] -translate-x-1/2 rounded-full bg-accent/20 blur-[120px]" />
+          <div className="pointer-events-none absolute bottom-0 left-1/2 h-72 w-[42rem] -translate-x-1/2 rounded-full bg-accent/10 blur-[120px]" />
           <div className="relative mx-auto w-full max-w-3xl px-5 py-20 text-center sm:py-28">
-            <p className="text-sm font-bold uppercase tracking-widest text-accent-2">
+            <p className="text-sm font-bold uppercase tracking-widest text-accent">
               Free Strategy Call
             </p>
             <h2 className="mt-4 font-display text-4xl leading-[1] tracking-tight sm:text-6xl">
@@ -370,7 +370,7 @@ export default function Home() {
             </p>
 
             {/* ============ BOOKING CALENDAR ============ */}
-            <div className="mx-auto mt-10 max-w-2xl overflow-hidden rounded-2xl border border-border bg-white p-2 shadow-2xl shadow-black/40 sm:p-3">
+            <div className="mx-auto mt-10 max-w-2xl overflow-hidden rounded-2xl border border-border bg-white p-2 shadow-xl shadow-black/10 sm:p-3">
               <iframe
                 src="https://link.mobilehomeguys.ai/widget/booking/S1JGD7tDR81CX4H5KAbI"
                 allow="payment"
