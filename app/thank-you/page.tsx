@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import ScheduleTracker from "./schedule-tracker";
 
 export const metadata: Metadata = {
   title: "You're Booked — Trailer Dawgz",
@@ -29,9 +28,6 @@ function Check() {
 export default function ThankYou() {
   return (
     <div className="flex flex-1 flex-col">
-      {/* Fires the Meta Schedule conversion (Pixel + CAPI, deduplicated) */}
-      <ScheduleTracker />
-
       {/* ================= NAV ================= */}
       <header className="border-b border-border bg-background">
         <div className="mx-auto flex w-full max-w-6xl items-center justify-center px-5 py-4 sm:justify-start">
