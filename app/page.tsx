@@ -121,27 +121,16 @@ export default function Home() {
                 <p className="px-2 pb-3 pt-1 text-center text-sm font-semibold uppercase tracking-wider text-accent">
                   ▶ Watch This First — 4 Min
                 </p>
-                {/*
-                  ============================================================
-                  VSL GOES HERE
-                  Drop in your video embed (YouTube / Wistia / Vimeo / <video>).
-                  Replace the placeholder block below with your <iframe> and
-                  keep the aspect-video wrapper for a responsive 16:9 player.
-                  ============================================================
-                */}
-                <div className="relative flex aspect-video w-full items-center justify-center overflow-hidden rounded-xl border border-border bg-surface-2">
-                  <div className="bg-grid absolute inset-0 opacity-30" />
-                  <div className="relative flex flex-col items-center gap-4 text-center">
-                    <span className="flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-accent-2 to-accent text-black shadow-lg shadow-accent/40 transition-transform hover:scale-105">
-                      <svg viewBox="0 0 24 24" className="ml-1 h-9 w-9" fill="currentColor" aria-hidden="true">
-                        <path d="M8 5v14l11-7L8 5Z" />
-                      </svg>
-                    </span>
-                    <p className="max-w-xs px-4 text-sm font-medium text-muted">
-                      How trailer dealers are booking their calendars solid — without lifting a finger.
-                    </p>
-                  </div>
-                </div>
+                <video
+                  className="aspect-video w-full rounded-xl border border-border bg-black"
+                  controls
+                  preload="metadata"
+                  playsInline
+                  poster="/vsl-poster.jpg"
+                >
+                  <source src="/vsl.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
                 <p className="px-2 pb-1 pt-3 text-center text-xs text-muted">
                   Turn your sound on. This is the exact system we install on your lot.
                 </p>
