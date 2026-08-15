@@ -119,7 +119,7 @@ export default function Home() {
             <div className="lg:pl-4">
               <div className="rounded-2xl border border-border bg-surface p-3 shadow-xl shadow-black/10">
                 <p className="px-2 pb-3 pt-1 text-center text-sm font-semibold uppercase tracking-wider text-accent">
-                  ▶ Watch This First — 4 Min
+                  ▶ Watch This First — 3 Min
                 </p>
                 <video
                   className="aspect-video w-full rounded-xl border border-border bg-black"
