@@ -90,54 +90,6 @@ export default function ThankYou() {
           </div>
         </section>
 
-        {/* ================= VSL ================= */}
-        <section className="border-b border-border bg-surface/40">
-          <div className="mx-auto w-full max-w-3xl px-5 py-16 sm:py-20">
-            <div className="mx-auto max-w-xl text-center">
-              <p className="text-sm font-bold uppercase tracking-widest text-accent">
-                Watch Before Your Call
-              </p>
-              <h2 className="mt-3 font-display text-3xl tracking-tight sm:text-4xl">
-                Take 4 Minutes &amp; Show Up Ready
-              </h2>
-              <p className="mt-4 text-lg text-muted">
-                This quick video walks you through exactly how our system fills trailer lots with
-                exclusive buyers — so our call is spent on your game plan, not the basics.
-              </p>
-            </div>
-
-            <div className="mx-auto mt-10 max-w-2xl rounded-2xl border border-border bg-surface p-3 shadow-xl shadow-black/10">
-              <p className="px-2 pb-3 pt-1 text-center text-sm font-semibold uppercase tracking-wider text-accent">
-                ▶ Watch This First — 4 Min
-              </p>
-              {/*
-                ============================================================
-                VSL GOES HERE
-                Drop in your video embed (YouTube / Wistia / Vimeo / <video>).
-                Replace the placeholder block below with your <iframe> and
-                keep the aspect-video wrapper for a responsive 16:9 player.
-                ============================================================
-              */}
-              <div className="relative flex aspect-video w-full items-center justify-center overflow-hidden rounded-xl border border-border bg-surface-2">
-                <div className="bg-grid absolute inset-0 opacity-30" />
-                <div className="relative flex flex-col items-center gap-4 text-center">
-                  <span className="flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-accent-2 to-accent text-black shadow-lg shadow-accent/40 transition-transform hover:scale-105">
-                    <svg viewBox="0 0 24 24" className="ml-1 h-9 w-9" fill="currentColor" aria-hidden="true">
-                      <path d="M8 5v14l11-7L8 5Z" />
-                    </svg>
-                  </span>
-                  <p className="max-w-xs px-4 text-sm font-medium text-muted">
-                    Your quick pre-call breakdown — how trailer dealers book their calendars solid.
-                  </p>
-                </div>
-              </div>
-              <p className="px-2 pb-1 pt-3 text-center text-xs text-muted">
-                Turn your sound on. This is the exact system we install on your lot.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* ================= BEFORE THE CALL ================= */}
         <section>
           <div className="mx-auto w-full max-w-3xl px-5 py-16 sm:py-20">

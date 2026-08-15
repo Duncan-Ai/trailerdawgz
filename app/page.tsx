@@ -74,9 +74,9 @@ export default function Home() {
         <section className="relative overflow-hidden border-b border-border">
           <div className="bg-grid pointer-events-none absolute inset-0 opacity-60" />
           <div className="pointer-events-none absolute -top-40 left-1/2 h-80 w-[42rem] -translate-x-1/2 rounded-full bg-accent/10 blur-[120px]" />
-          <div className="relative mx-auto grid w-full max-w-6xl gap-12 px-5 py-16 sm:py-24 lg:grid-cols-2 lg:items-center">
-            {/* Left: copy */}
-            <div>
+          <div className="relative mx-auto grid w-full max-w-6xl gap-8 px-5 py-16 sm:py-24 lg:grid-cols-2 lg:items-center lg:gap-x-12 lg:gap-y-8">
+            {/* Copy: headline (first on both mobile and desktop) */}
+            <div className="lg:col-start-1 lg:row-start-1">
               <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-muted">
                 <span className="h-2 w-2 rounded-full bg-accent" />
                 For Trailer Lots Done Fighting Over The Same 6 Recycled Facebook Leads
@@ -92,8 +92,33 @@ export default function Home() {
                 and everything on wheels.</strong> We run the ads, our AI books the appointments, and you
                 close the deals. No shared leads. No tire-kickers. No excuses.
               </p>
+            </div>
 
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+            {/* VSL — on mobile this sits between the headline and the CTA button */}
+            <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 lg:self-center lg:pl-4">
+              <div className="rounded-2xl border border-border bg-surface p-3 shadow-xl shadow-black/10">
+                <p className="px-2 pb-3 pt-1 text-center text-sm font-semibold uppercase tracking-wider text-accent">
+                  ▶ Watch This First — 3 Min
+                </p>
+                <video
+                  className="aspect-video w-full rounded-xl border border-border bg-black"
+                  controls
+                  preload="metadata"
+                  playsInline
+                  poster="/vsl-poster.jpg"
+                >
+                  <source src="/vsl.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <p className="px-2 pb-1 pt-3 text-center text-xs text-muted">
+                  Turn your sound on. This is the exact system we install on your lot.
+                </p>
+              </div>
+            </div>
+
+            {/* Copy: CTA + proof (mobile: below the video; desktop: under the headline) */}
+            <div className="lg:col-start-1 lg:row-start-2">
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
                 <CtaButton>Book My Free Strategy Call</CtaButton>
                 <span className="text-sm text-muted">
                   Free competitor ad report. No contracts. No pressure.
@@ -113,28 +138,6 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-            </div>
-
-            {/* Right: VSL */}
-            <div className="lg:pl-4">
-              <div className="rounded-2xl border border-border bg-surface p-3 shadow-xl shadow-black/10">
-                <p className="px-2 pb-3 pt-1 text-center text-sm font-semibold uppercase tracking-wider text-accent">
-                  ▶ Watch This First — 3 Min
-                </p>
-                <video
-                  className="aspect-video w-full rounded-xl border border-border bg-black"
-                  controls
-                  preload="metadata"
-                  playsInline
-                  poster="/vsl-poster.jpg"
-                >
-                  <source src="/vsl.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-                <p className="px-2 pb-1 pt-3 text-center text-xs text-muted">
-                  Turn your sound on. This is the exact system we install on your lot.
-                </p>
-              </div>
             </div>
           </div>
         </section>
